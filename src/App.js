@@ -1,23 +1,46 @@
-import logo from './logo.svg';
 import './App.css';
+import Feed from './screens/Feed';
+import Login from './screens/Login';
+import { useState, useEffect } from 'react'
+import firebase from "firebase"
+
 
 function App() {
+  const [user, setUser] = useState()
+  const [loading,setLoading]=useState(true)
+  useEffect(() => {
+    firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    setUser(user)
+    setLoading(false)
+  } else {
+    setUser(null)
+        setLoading(false)
+
+  }
+});
+  },[])
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      {loading ? (
+        <div></div>
+      ):
+        (
+        <>
+    {!user ? (
+        <Login/>
+      ) : (
+          <Feed user={user}/>
+      )}
+          </>
+    )}
+
+
+
+     
+      
     </div>
   );
 }

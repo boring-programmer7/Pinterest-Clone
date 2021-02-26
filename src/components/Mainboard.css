@@ -1,0 +1,356 @@
+.pin_container>img {
+    width: 100%;
+    border-radius: 16px;
+    cursor: zoom-in;
+    display: flex;
+    object-fit: cover;
+}
+
+
+.pin_container {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    width: 236px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+
+
+
+.board_wrapper{
+    background-color: white;
+    width: 100%;
+    margin-top: 15px;
+
+}
+
+.gridCentered {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gridCentered .static,
+.gridCentered .Masonry-Premount .Collection-Item {
+    position: absolute;
+    visibility: hidden;
+}
+
+.gridCentered .Masonry-Premount,
+.gridCentered .Masonry-Premount .AutoSizer,
+.gridCentered .Masonry-Premount .Collection {
+    width: auto !important;
+}
+
+@media (min-width: 0px) and (max-width: 400px) {
+    
+    .pin_container{
+        width: 150px;
+    }
+    .gridCentered {
+        width: 90%;
+        column-count: 2;
+        margin: auto;
+
+    
+    }
+}
+
+@media (min-width: 400px) and (max-width: 500px) {
+    .pin_container {
+        width: 180px;
+    }
+
+    .gridCentered {
+        width: 400px;
+        column-count: 2
+    }
+
+    .gridCentered .Masonry-Premount .Collection-Item:nth-child(-n+2),
+    .gridCentered .static:nth-child(-n+2) {
+        position: static !important;
+        visibility: visible !important;
+        float: left;
+        display: block;
+    }
+}
+
+
+
+
+@media (min-width: 500px) and (max-width: 755px) {
+     .pin_container {
+         width: 236px;
+     }
+
+    .gridCentered {
+        width: 500px;
+        column-count:2
+    }
+
+    .gridCentered .Masonry-Premount .Collection-Item:nth-child(-n+2),
+    .gridCentered .static:nth-child(-n+2) {
+        position: static !important;
+        visibility: visible !important;
+        float: left;
+        display: block;
+    }
+}
+
+@media (min-width: 756px) and (max-width: 1007px) {
+    .gridCentered {
+        width: 756px;
+        column-count:3
+    }
+
+    .gridCentered .Masonry-Premount .Collection-Item:nth-child(-n+3),
+    .gridCentered .static:nth-child(-n+3) {
+        position: static !important;
+        visibility: visible !important;
+        float: left;
+        display: block;
+    }
+}
+
+@media (min-width: 1008px) and (max-width: 1259px) {
+    .gridCentered {
+        width: 1008px;
+        column-count:4
+    }
+
+    .gridCentered .Masonry-Premount .Collection-Item:nth-child(-n+4),
+    .gridCentered .static:nth-child(-n+4) {
+        position: static !important;
+        visibility: visible !important;
+        float: left;
+        display: block;
+    }
+}
+
+@media (min-width: 1260px) and (max-width: 1511px) {
+    .gridCentered {
+        width: 1260px;
+        column-count:5
+    }
+
+    .gridCentered .Masonry-Premount .Collection-Item:nth-child(-n+5),
+    .gridCentered .static:nth-child(-n+5) {
+        position: static !important;
+        visibility: visible !important;
+        float: left;
+        display: block;
+    }
+}
+
+@media (min-width: 1512px) and (max-width: 1763px) {
+    .gridCentered {
+        width: 1512px;
+        column-count:6
+    }
+
+    .gridCentered .Masonry-Premount .Collection-Item:nth-child(-n+6),
+    .gridCentered .static:nth-child(-n+6) {
+        position: static !important;
+        visibility: visible !important;
+        float: left;
+        display: block;
+    }
+}
+
+@media (min-width: 1764px) and (max-width: 2015px) {
+    .gridCentered {
+        width: 1764px;
+        column-count:7
+    }
+
+    .gridCentered .Masonry-Premount .Collection-Item:nth-child(-n+7),
+    .gridCentered .static:nth-child(-n+7) {
+        position: static !important;
+        visibility: visible !important;
+        float: left;
+        display: block;
+    }
+}
+
+@media (min-width: 2016px) and (max-width: 2267px) {
+    .gridCentered {
+        width: 2016px;
+        column-count:8
+    }
+
+    .gridCentered .Masonry-Premount .Collection-Item:nth-child(-n+8),
+    .gridCentered .static:nth-child(-n+8) {
+        position: static !important;
+        visibility: visible !important;
+        float: left;
+        display: block;
+    }
+}
+
+@media (min-width: 2268px) and (max-width: 2519px) {
+    .gridCentered {
+        width: 2268px;
+        column-count:9
+    }
+
+    .gridCentered .Masonry-Premount .Collection-Item:nth-child(-n+9),
+    .gridCentered .static:nth-child(-n+9) {
+        position: static !important;
+        visibility: visible !important;
+        float: left;
+        display: block;
+    }
+}
+
+@media (min-width: 2520px) and (max-width: 2771px) {
+    .gridCentered {
+        width: 2520px;
+        column-count:10
+    }
+
+    .gridCentered .Masonry-Premount .Collection-Item:nth-child(-n+10),
+    .gridCentered .static:nth-child(-n+10) {
+        position: static !important;
+        visibility: visible !important;
+        float: left;
+        display: block;
+    }
+}
+
+@media (min-width: 2772px) and (max-width: 3023px) {
+    .gridCentered {
+        width: 2772px;
+        column-count:11
+    }
+
+    .gridCentered .Masonry-Premount .Collection-Item:nth-child(-n+11),
+    .gridCentered .static:nth-child(-n+11) {
+        position: static !important;
+        visibility: visible !important;
+        float: left;
+        display: block;
+    }
+}
+
+@media (min-width: 3024px) and (max-width: 3275px) {
+    .gridCentered {
+        width: 3024px;
+        column-count:12
+    }
+
+    .gridCentered .Masonry-Premount .Collection-Item:nth-child(-n+12),
+    .gridCentered .static:nth-child(-n+12) {
+        position: static !important;
+        visibility: visible !important;
+        float: left;
+        display: block;
+    }
+}
+
+@media (min-width: 3276px) and (max-width: 3527px) {
+    .gridCentered {
+        width: 3276px;
+        column-count:13
+    }
+
+    .gridCentered .Masonry-Premount .Collection-Item:nth-child(-n+13),
+    .gridCentered .static:nth-child(-n+13) {
+        position: static !important;
+        visibility: visible !important;
+        float: left;
+        display: block;
+    }
+}
+
+@media (min-width: 3528px) and (max-width: 3779px) {
+    .gridCentered {
+        width: 3528px;
+        column-count:14
+    }
+
+    .gridCentered .Masonry-Premount .Collection-Item:nth-child(-n+14),
+    .gridCentered .static:nth-child(-n+14) {
+        position: static !important;
+        visibility: visible !important;
+        float: left;
+        display: block;
+    }
+}
+
+@media (min-width: 3780px) and (max-width: 4031px) {
+    .gridCentered {
+        width: 3780px;
+        column-count:15
+    }
+
+    .gridCentered .Masonry-Premount .Collection-Item:nth-child(-n+15),
+    .gridCentered .static:nth-child(-n+15) {
+        position: static !important;
+        visibility: visible !important;
+        float: left;
+        display: block;
+    }
+}
+
+@media (min-width: 4032px) and (max-width: 4283px) {
+    .gridCentered {
+        width: 4032px;
+        column-count:16
+    }
+
+    .gridCentered .Masonry-Premount .Collection-Item:nth-child(-n+16),
+    .gridCentered .static:nth-child(-n+16) {
+        position: static !important;
+        visibility: visible !important;
+        float: left;
+        display: block;
+    }
+}
+
+@media (min-width: 4284px) and (max-width: 4535px) {
+    .gridCentered {
+        width: 4284px;
+        column-count:17
+    }
+
+    .gridCentered .Masonry-Premount .Collection-Item:nth-child(-n+17),
+    .gridCentered .static:nth-child(-n+17) {
+        position: static !important;
+        visibility: visible !important;
+        float: left;
+        display: block;
+    }
+}
+
+@media (min-width: 4536px) and (max-width: 4787px) {
+    .gridCentered {
+        width: 4536px;
+        column-count:18
+    }
+
+    .gridCentered .Masonry-Premount .Collection-Item:nth-child(-n+18),
+    .gridCentered .static:nth-child(-n+18) {
+        position: static !important;
+        visibility: visible !important;
+        float: left;
+        display: block;
+    }
+}
+
+@media (min-width: 4788px) and (max-width: 5039px) {
+    .gridCentered {
+        width: 4788px;
+        column-count:19
+    }
+
+    .gridCentered .Masonry-Premount .Collection-Item:nth-child(-n+19),
+    .gridCentered .static:nth-child(-n+19) {
+        position: static !important;
+        visibility: visible !important;
+        float: left;
+        display: block;
+    }
+}
+
